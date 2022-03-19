@@ -1,114 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
-    <!-- nosso CSS -->
-    <link rel="stylesheet" href="static/style.css">
-    <title>Rastreador de Documento Invalido</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <!-- nosso CSS -->
+  <link rel="stylesheet" href="static/style.css">
+  <title>Rastreador de Documento Invalido</title>
 </head>
+
 <body>
-    <div class="container">
-        <!-- aside -->
-        <aside>
-            <div id="aside-logo"></div>
-            <div class="backoffice">Backoffice</div>
-            <div class="aside-menu">
-                <ul>
-                <li>Protocolos</li>
-                <li>Documentos</li>  
-                <li>Usuarios</li>
-                <li>Fontes</li>
-                <li>Matrizes</li>  
-                <li>Regras</li>
-                <li>Atributos</li>
-                <li> <a href="page.html">Monitor</a></li>
-                <li>Organizacoes</li>  
-                <li>Sair</li>
-                </ul>
-            </div>
-        </aside>
+  <div class="container">
+    <!-- aside -->
+    <aside>
+      <div id="aside-logo"></div>
+      <div class="backoffice">Backoffice</div>
+      <div class="aside-menu">
+        <ul>
+          <li>Protocolos</li>
+          <li>Documentos</li>
+          <li> <a href="usuarios.html">Usuarios</a></li>
+          <li>Fontes</li>
+          <li>Matrizes</li>
+          <li>Regras</li>
+          <li>Atributos</li>
+          <li> <a href="page.html">Monitor</a></li>
+          <li>Organizacoes</li>
+          <li>Sair</li>
+        </ul>
+      </div>
+    </aside>
 
-        <!-- main -->
-        <main>
+    <!-- main -->
+    <main>
 
-            
-            <section class="produtos" id="produtos">
-                <h1>Monitor</h1>
-                <div class="produtos-container">
-                  <div class="produtos-item purple">
-                    <h2>Pré - Processando</h2>
-                    <h2 class="paragrafo"">250 relatórios</h2>
-                    <button class="botao">Exibir todos</button>
-                  </div>
-                  <div class="produtos-item pink">
-                    <h2>Processando</h2>
-                    <h2 class="paragrafo"">250 relatórios</h2>
-                    <button class="botao">Exibir todos</button>
-                  </div>
-                  <div class="produtos-item blue">
-                    <h2>Consultas em análise</h2>
-                    <h2 class="paragrafo"">250 relatórios</h2>
-                   
-                    <button class="botao">Exibir todos</button>
-                   
-                  </div>
-                </div>
-              </section>
-              
-         <section>
-            <div class="limiter">
-                <h1>Situação</h1>
-                <div class="container-table100">
-                <div class="wrap-table100">
-                <div class="table100 ver1 m-b-110">
+
+      <section class="produtos" id="produtos">
+        <h1>Monitor</h1>
+        <div class="produtos-container">
+          <div class="produtos-item purple">
+            <h2>Pré - Processando</h2>
+            <h2 class="paragrafo">250 relatórios</h2>
+            <button class="botao">Exibir todos</button>
+          </div>
+          <div class="produtos-item pink">
+            <h2>Processando</h2>
+            <h2 class="paragrafo">250 relatórios</h2>
+            <button class="botao">Exibir todos</button>
+          </div>
+          <div class="produtos-item blue">
+            <h2>Consultas em análise</h2>
+            <h2 class="paragrafo">250 relatórios</h2>
+
+            <button class="botao">Exibir todos</button>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="limiter">
+          <h1>Situação</h1>
+          <div class="container-table100">
+            <div class="wrap-table100">
+              <div class="table100 ver1 m-b-110">
                 <table data-vertable="ver1">
-                <thead>
-                <tr class="row100 head">
-                <th class="column100 column1" data-column="column1">SERVIÇO</th>
-                <th class="column100 column2" data-column="column2">Status</th>
-                
-           
-           
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="row100">
-                <td class="column100 column1" data-column="column1">AntecedentesCE</td>
-                <td class="column100 column2" data-column="column2">Em funcionamento</td>
-                
-             
-                </tr>
-                <tr class="row100">
-                <td class="column100 column1" data-column="column1">AntecedentesDF</td>
-                <td class="column100 column2" data-column="column2">Em funcionamento</td>
-                
-               
-                </tr>
-                <tr class="row100">
-                <td class="column100 column1" data-column="column1">CADICON</td>
-                <td class="column100 column2" data-column="column2">Pausado</td>
-               
-                </tr>
-                <tr class="row100">
-                <td class="column100 column1" data-column="column1">SIAF</td>
-                <td class="column100 column2" data-column="column2">Falho</td>
-                
-                </tr>
-                </tbody>
-                </table>
-                </div>
-                </div>
-                </div>
-         </section>
-            
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column100 column1" data-column="column1">SERVIÇO</th>
+                      <th class="column100 column2" data-column="column2">Status</th>
 
-        </main>
-    </div>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">AntecedentesCE</td>
+                      <td class="column100 column2" data-column="column2">Em funcionamento</td>
+
+
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">AntecedentesDF</td>
+                      <td class="column100 column2" data-column="column2">Em funcionamento</td>
+
+
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">CADICON</td>
+                      <td class="column100 column2" data-column="column2">Pausado</td>
+
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">SIAF</td>
+                      <td class="column100 column2" data-column="column2">Falho</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+    </main>
+  </div>
 </body>
+
 </html>

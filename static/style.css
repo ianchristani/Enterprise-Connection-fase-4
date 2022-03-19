@@ -311,8 +311,9 @@ td {
   padding-left: 25px;
 }
 .column100.column1 {
-  width: 265px;
-  padding-left: 42px;
+  width: 10px;
+  padding-right: 25px;
+  text-align: center;
 }
 .row100.head th {
   padding-top: 24px;
@@ -350,4 +351,37 @@ td {
 .table100.ver1 .row100 td:hover {
   background-color: #6c7ae0;
   color: #fff;
+}
+
+/*Implementação de botões tabela usuarios*/
+.column-acoes {
+  width: 15%;
+}
+
+.acoes {
+  display: flex;
+} 
+
+.botao-logar, .botao-detalhes {
+  margin: 0 3%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--purple-50);
+  padding: 0.5rem 0.7rem;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+
+.botao-detalhes {
+  background: var(--purple-300);
+}
+
+.botao-logar {
+  background: #4100cf;
+}
+
+.sem-link:hover {
+  
 }
