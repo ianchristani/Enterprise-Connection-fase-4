@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
   <!-- nosso CSS -->
-  <link rel="stylesheet" href="static/style.css">
-  <title>Rastreador de Documento Invalido</title>
+  <link rel="stylesheet" href="static/style_page.css">
+  <title>Monitor De Servicos</title>
 </head>
 
 <body>
@@ -22,14 +22,14 @@
       <div class="backoffice">Backoffice</div>
       <div class="aside-menu">
         <ul>
-          <li>Protocolos</li>
-          <li>Documentos</li>
           <li> <a href="usuarios.html">Usuarios</a></li>
+          <li> <a href="page.html">Monitor</a></li>
+          <li>Protocolos</li>
+          <li>Documentos</li> 
           <li>Fontes</li>
           <li>Matrizes</li>
           <li>Regras</li>
-          <li>Atributos</li>
-          <li> <a href="page.html">Monitor</a></li>
+          <li>Atributos</li> 
           <li>Organizacoes</li>
           <li>Sair</li>
         </ul>
@@ -38,31 +38,28 @@
 
     <!-- main -->
     <main>
-
-
-      <section class="produtos" id="produtos">
+      <!-- tabela de processamento -->
+      <section class="produtos">
         <h1>Monitor</h1>
         <div class="produtos-container">
-          <div class="produtos-item purple">
+          <div class="produtos-item red">
             <h2>Pré - Processando</h2>
             <h2 class="paragrafo">250 relatórios</h2>
             <button class="botao">Exibir todos</button>
           </div>
-          <div class="produtos-item pink">
+          <div class="produtos-item orange">
             <h2>Processando</h2>
             <h2 class="paragrafo">250 relatórios</h2>
             <button class="botao">Exibir todos</button>
           </div>
-          <div class="produtos-item blue">
+          <div class="produtos-item green">
             <h2>Consultas em análise</h2>
             <h2 class="paragrafo">250 relatórios</h2>
-
             <button class="botao">Exibir todos</button>
-
           </div>
         </div>
       </section>
-
+      <!-- tabela de monitoramento -->
       <section>
         <div class="limiter">
           <h1>Situação</h1>
@@ -74,33 +71,37 @@
                     <tr class="row100 head">
                       <th class="column100 column1" data-column="column1">SERVIÇO</th>
                       <th class="column100 column2" data-column="column2">Status</th>
-
-
-
+                      <th class="column100 column3" data-column="column3">Ultima Atualizacao</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="row100">
-                      <td class="column100 column1" data-column="column1">AntecedentesCE</td>
-                      <td class="column100 column2" data-column="column2">Em funcionamento</td>
-
-
+                      <td class="column100 data" data-column="column1">AntecedentesCE</td>
+                      <td class="column100 column2 data" data-column="column2">
+                        <div class="sinal" id="funcionando"> </div>
+                      </td>
+                      <td class="column100 column3" data-column="column3"> 4:20 PM</td>
                     </tr>
                     <tr class="row100">
-                      <td class="column100 column1" data-column="column1">AntecedentesDF</td>
-                      <td class="column100 column2" data-column="column2">Em funcionamento</td>
-
-
+                      <td class="column100 data" data-column="column1">AntecedentesDF</td>
+                      <td class="column100 column2 data" data-column="column2">
+                        <div class="sinal" id="semservico"> </div>
+                      </td>
+                      <td class="column100 column3" data-column="column3"> 4:15 PM</td>
                     </tr>
                     <tr class="row100">
-                      <td class="column100 column1" data-column="column1">CADICON</td>
-                      <td class="column100 column2" data-column="column2">Pausado</td>
-
+                      <td class="column100 data" data-column="column1">CADICON</td>
+                      <td class="column100 column2 data" data-column="column2">
+                        <div class="sinal" id="funcionando"> </div>
+                      </td>
+                      <td class="column100 column3" data-column="column3"> 4:20 PM</td>
                     </tr>
                     <tr class="row100">
-                      <td class="column100 column1" data-column="column1">SIAF</td>
-                      <td class="column100 column2" data-column="column2">Falho</td>
-
+                      <td class="column100 data" data-column="column1">SIAF</td>
+                      <td class="column100 column2 data" data-column="column2">
+                        <div class="sinal" id="pausado"> </div>
+                      </td>
+                      <td class="column100 column3" data-column="column3"> 4:19 PM</td>
                     </tr>
                   </tbody>
                 </table>
@@ -108,10 +109,7 @@
             </div>
           </div>
       </section>
-
-
     </main>
   </div>
 </body>
-
 </html>
