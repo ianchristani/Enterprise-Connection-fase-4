@@ -1,175 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- nosso CSS -->
-    <link rel="stylesheet" href="static/style_usuarios.css">
+    <link rel="stylesheet" href="static/style_usuarios.css" />
     <title>Pesquisa de usuários</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!-- aside -->
-        <aside>
-            <div id="aside-logo"></div>
-            <div class="backoffice">Backoffice</div>
-            <div class="aside-menu">
-                <ul>
-                    <li> <a href="usuarios.html">Usuarios</a></li>
-                    <li> <a href="page.html">Monitor</a></li>
-                    <li>Protocolos</li>
-                    <li>Documentos</li> 
-                    <li>Fontes</li>
-                    <li>Matrizes</li>
-                    <li>Regras</li>
-                    <li>Atributos</li> 
-                    <li>Organizacoes</li>
-                    <li>Sair</li>
-                </ul>
+      <!-- aside -->
+      <aside>
+        <div id="aside-logo"></div>
+        <div class="backoffice">Backoffice</div>
+        <div class="aside-menu">
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="page.html">Monitor</a></li>
+            <li>Protocolos</li>
+            <li>Documentos</li>
+            <li>Fontes</li>
+            <li>Matrizes</li>
+            <li>Regras</li>
+            <li>Atributos</li>
+            <li>Organizacoes</li>
+            <li>Sair</li>
+          </ul>
+        </div>
+      </aside>
+      <!-- main -->
+      <main>
+        <section>
+          <h1>Usuários</h1>
+
+          <div class="pesquisa">
+            <input class="filtro" type="text" placeholder="Filtro" />
+            <button class="botao-pesquisa">Listar</button>
+          </div>
+          <div class="container-table100">
+            <div class="wrap-table100">
+              <div class="adicionar">
+                <button class="botao-adiciona">Adicionar</button>
+
+                <div class="usuario-desativado">
+                    <p>Usuários desativados</p>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="table100 ver1 m-b-110">
+                <table data-vertable="ver1">
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column100 column1" data-column="column1">
+                        ID
+                      </th>
+                      <th class="column100 column2" data-column="column2">
+                        CLIENTE
+                      </th>
+                      <th class="column100 column3" data-column="column3">
+                        PROTOCOLOS
+                      </th>
+                      <th class="column100 column4" data-column="column4">
+                        E-MAIL
+                      </th>
+                      <th class="column-acoes" data-column="column5">AÇÕES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        520
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        João da Silva
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        65980644-5
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        joãodasilva@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        980
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Maria Joana da Silva
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        98563240-6
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        maridasilva@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        987
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Lucas da Silva
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        98624350-5
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        larissaferreira@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        623
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Gustavo henrique
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        56234087-6
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        mateusfernandes@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        653
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Fabricio da Silva
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        63458720-5
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        fabriciodasilva@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        870
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Pedro martins
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        74801568-5
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        pedromartins@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        425
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Luis moreira
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        64578952-2
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        lasaromendes@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        456
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Ferreirinha joão
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        42158730-6
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        joãoferrer@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        989
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Pedro henrique
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        16985234-3
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        pedrohenrique2@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1">
+                        654
+                      </td>
+                      <td class="column100 column2" data-column="column2">
+                        Mauricio Fernandes
+                      </td>
+                      <td class="column100 column3" data-column="column3">
+                        32568709-9
+                      </td>
+                      <td class="column100 column4" data-column="column4">
+                        mauriciofernandes@gmail.com
+                      </td>
+                      <td class="acoes" data-column="column5">
+                        <button class="botao-detalhes">Detalhes</button>
+                        <button class="botao-logar">Logar</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-        </aside>
-        <!-- main -->
-        <main>
-            <section>
-                <div class="limiter">
-                    <h1>Usuários</h1>
-                    <div class="container-table100">
-                        <div class="wrap-table100">
-                            <div class="table100 ver1 m-b-110">
-                                <table data-vertable="ver1">
-                                    <thead>
-                                        <tr class="row100 head">
-                                            <th class="column100 column1" data-column="column1">ID</th>
-                                            <th class="column100 column2" data-column="column2">CLIENTE</th>
-                                            <th class="column100 column3" data-column="column3">PROTOCOLOS</th>
-                                            <th class="column100 column4" data-column="column4">E-MAIL</th>
-                                            <th class="column-acoes" data-column="column5">AÇÕES</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">520</td>
-                                            <td class="column100 column2" data-column="column2">João da Silva</td>
-                                            <td class="column100 column3" data-column="column3">65980644-5</td>
-                                            <td class="column100 column4" data-column="column4">joãodasilva@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">980</td>
-                                            <td class="column100 column2" data-column="column2">Maria Joana da Silva</td>
-                                            <td class="column100 column3" data-column="column3">98563240-6</td>
-                                            <td class="column100 column4" data-column="column4">maridasilva@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">987</td>
-                                            <td class="column100 column2" data-column="column2">Lucas da Silva</td>
-                                            <td class="column100 column3" data-column="column3">98624350-5</td>
-                                            <td class="column100 column4" data-column="column4">larissaferreira@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">623</td>
-                                            <td class="column100 column2" data-column="column2">Gustavo henrique</td>
-                                            <td class="column100 column3" data-column="column3">56234087-6</td>
-                                            <td class="column100 column4" data-column="column4">mateusfernandes@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">653</td>
-                                            <td class="column100 column2" data-column="column2">Fabricio da Silva</td>
-                                            <td class="column100 column3" data-column="column3">63458720-5</td>
-                                            <td class="column100 column4" data-column="column4">fabriciodasilva@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">870</td>
-                                            <td class="column100 column2" data-column="column2">Pedro martins</td>
-                                            <td class="column100 column3" data-column="column3">74801568-5</td>
-                                            <td class="column100 column4" data-column="column4">pedromartins@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">425</td>
-                                            <td class="column100 column2" data-column="column2">Luis moreira</td>
-                                            <td class="column100 column3" data-column="column3">64578952-2</td>
-                                            <td class="column100 column4" data-column="column4">lasaromendes@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">456</td>
-                                            <td class="column100 column2" data-column="column2">Ferreirinha joão</td>
-                                            <td class="column100 column3" data-column="column3">42158730-6</td>
-                                            <td class="column100 column4" data-column="column4">joãoferrer@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">989</td>
-                                            <td class="column100 column2" data-column="column2">Pedro henrique</td>
-                                            <td class="column100 column3" data-column="column3">16985234-3</td>
-                                            <td class="column100 column4" data-column="column4">pedrohenrique2@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-                                            </td>
-                                        </tr>
-                                        <tr class="row100">
-                                            <td class="column100 column1" data-column="column1">654</td>
-                                            <td class="column100 column2" data-column="column2">Mauricio Fernandes</td>
-                                            <td class="column100 column3" data-column="column3">32568709-9</td>
-                                            <td class="column100 column4" data-column="column4">mauriciofernandes@gmail.com</td>
-                                            <td class="acoes" data-column="column5">
-                                                <button class="botao-detalhes">Detalhes</button>
-                                                <button class="botao-logar">Logar</button>
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-        </main>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>
